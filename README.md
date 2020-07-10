@@ -1,15 +1,15 @@
 # Rocket 
 https://rocketdeliveries.io
 
-Testing a simple onboarding, a hosted dashboard, verification, and payouts management with Stripe.
+Testing a simple onboarding, hosted dashboard, verification, and payouts management process with Stripe.
 
 ## Web onboarding 
 
-Use [Connect Custom accounts](https://stripe.com/connect/account-types) to get them paid. 
+Use [Connect Custom accounts](https://stripe.com/connect/account-types) from Stripe to payout your vendors or partners
 
 Custom allows you to control every part of the user experience; accounts can be created directly via the Stripe API. 
 
-This demo also uses [Connect Onboarding]((https://stripe.com/docs/connect/connect-onboarding)) to provide onboarding and identity verification for your platform
+This demo also uses [Connect Onboarding]((https://stripe.com/docs/connect/connect-onboarding)) to provide onboarding and identity verification for your platform. Identify verification is a critical step in the global financial payments system
 
 This platform also uses the Stripe API to create payments for pilots, fetch their available and pending balance, and let them view transfers.
 
