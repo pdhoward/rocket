@@ -8,11 +8,6 @@ const Pilot = require('../../models/pilot');
 const Passenger = require('../../models/passenger');
 const Ride = require('../../models/ride');
 
-/* For this demo, we assume that we're always authenticating the
- * latest passenger. In a production app, you would also typically
- * have a user authentication system for passengers.
- */
-
 /**
  * POST /api/rides
  *

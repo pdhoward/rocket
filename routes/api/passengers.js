@@ -20,6 +20,8 @@ const Passenger = require('../../models/passenger');
  * Generate an ephemeral key for the logged in customer.
  */
 router.post('/me/ephemeral_keys', async (req, res, next) => {
+
+  // note api version can also be found in config
   const apiVersion = req.body['api_version'];
   try {
     // Find the latest passenger (see note above)
