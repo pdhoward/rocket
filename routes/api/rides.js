@@ -42,6 +42,8 @@ router.post('/', async (req, res, next) => {
     });
     // Save the ride
     await ride.save();
+    console.log(`------debug routes/api/rides-------`)
+    console.log(ride)
 
     // Create a Payment Intent and set its destination to the pilot's account
     const paymentIntent = await stripe.paymentIntents.create({

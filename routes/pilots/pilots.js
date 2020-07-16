@@ -60,6 +60,8 @@ router.get('/verified', pilotRequired, async(req, res) => {
 
 // Create a new Stripe Connect account for a Custom platform
 async function createStripeAccount(pilot, type, ipAddress) {
+  console.log(`------debug routes/pilots/pilots.js line 62`)
+  console.log(pilot, type, ipAddress)
   let stripeAccountId;
   /* Define the Capabilities we'll request for this account:
    *   - card_payments: sellers with connected accounts accept card payments directly
@@ -96,6 +98,9 @@ async function createStripeAccount(pilot, type, ipAddress) {
       // 'tos_acceptance[date]': Date.now(),
       // 'tos[ip]': ipAddress,
     });
+
+    console.log(`----routes/pilot/pilot line 102 ------`)
+    console.log(createdAccount)
     stripeAccountId = createdAccount.id;
   } else if (type === 'company') {
     // Create a connected Stripe Custom account for a business
